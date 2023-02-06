@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  background-color: var(--main-white);
+  h1 {
+    font-size: 3rem;
+    color: var(--main-red);
+    padding: 0.8em;
+    margin-right: 3rem;
+  }
+}
+
+.header::after {
+  position: absolute;
+  content: "";
+  width: 90%;
+  height: 0.25rem;
+  background-color: var(--main-red);
+  top: 7.2rem;
+  right: 1rem;
+}

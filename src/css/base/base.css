@@ -1,0 +1,37 @@
+/* ---SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      -FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+:root {
+  /* --main-grey: #f1eaed;
+  --main-pink: #ffc7d0;
+  --lighter-blue: #3d6997;
+  --dark-blue: #2e5073;
+  --darkest-blue: #1b3045;
+  --main-orange: #fbb32b; */
+}
+
+body,
+body * {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  font-family: "Rubik", sans-serif;
+  background-color: var(--dark-blue);
+  color: var(--main-black);
+  min-height: 100vh;
+}
+
+#root {
+  height: 100%;
+}
+
+button:hover {
+  cursor: pointer;
+}

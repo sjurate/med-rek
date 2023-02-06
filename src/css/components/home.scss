@@ -1,0 +1,48 @@
+.home {
+  color: var(--main-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  > * {
+    width: 50%;
+    padding: 3rem;
+  }
+  .about {
+    text-align: left;
+    h2 {
+      font-size: 2.5rem;
+    }
+    h5 {
+      font-size: 1.5rem;
+    }
+    > * {
+      margin-bottom: 1em;
+    }
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.link {
+  font-size: 0.9rem;
+  color: var(--main-black);
+  text-align: left;
+  color: var(--main-red);
+}
+.link:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 920px) {
+  .home {
+    flex-direction: column;
+    > * {
+      width: 80%;
+    }
+    img {
+      object-fit: contain;
+    }
+  }
+}
