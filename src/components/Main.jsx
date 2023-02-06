@@ -33,7 +33,7 @@ const Main = () => {
     // fetchData().catch(console.error);
 
     const data1 = JSON.parse(localStorage.getItem("recs"));
-    if (!data1) return;
+    if (!data1) console.log(data1);
     setData((prevData) => data1);
   }, []);
 
