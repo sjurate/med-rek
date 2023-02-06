@@ -19,11 +19,8 @@ function App() {
             <Header className="header" />
             <div className="page">
               <Routes>
-                <Route
-                  path="/medrek/main"
-                  element={<Home className="home" />}
-                ></Route>
-                <Route path="/medrek/recs" element={<Main />}></Route>
+                <Route path="/" element={<Home className="home" />}></Route>
+                <Route path="/medrek/main" element={<Main />}></Route>
                 <Route path="/medrek/contact" element={<Contact />} />
               </Routes>
             </div>

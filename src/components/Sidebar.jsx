@@ -14,10 +14,10 @@ const Sidebar = () => {
       <div className="sidebar" id={showNav ? "isVisible" : ""}>
         <div className="menu">Meniu</div>
         <nav className="navbar" onClick={() => setShowNav(!showNav)}>
-          <NavLink className="link" to="/medrek/main" end>
+          <NavLink className="link" to="/" end>
             Pagrindinis
           </NavLink>
-          <NavLink className="link" to="/medrek/recs">
+          <NavLink className="link" to="/medrek/main">
             Kurti rekomendacijas
           </NavLink>
           <NavLink className="link" to="/medrek/contact">
