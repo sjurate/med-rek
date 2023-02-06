@@ -25,16 +25,16 @@ const Main = () => {
   // }, []);
 
   useEffect(() => {
-    const fetchData = async () => {
-      const data = await JSON.parse(localStorage.getItem("recs"));
-      if (!data) return;
-      setData(data);
-    };
-    fetchData().catch(console.error);
+    // const fetchData = async () => {
+    //   const data = await JSON.parse(localStorage.getItem("recs"));
+    //   if (!data) return;
+    //   setData(data);
+    // };
+    // fetchData().catch(console.error);
 
-    // const data1 = JSON.parse(localStorage.getItem("recs"));
-    // if (!data1) return;
-    // setData((prevData) => data1);
+    const data1 = JSON.parse(localStorage.getItem("recs"));
+    if (!data1) return;
+    setData((prevData) => data1);
   }, []);
 
   useEffect(() => {
