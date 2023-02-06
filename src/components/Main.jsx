@@ -3,7 +3,7 @@ import List from "./List";
 import Rec from "./Rec";
 
 const Main = () => {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState("");
   const [change, setChange] = useState(true);
 
   // useEffect(() => {
@@ -25,19 +25,20 @@ const Main = () => {
   // }, []);
 
   useEffect(() => {
-    // const fetchData = async () => {
-    //   const data = await JSON.parse(localStorage.getItem("recs"));
-    //   if (!data) return;
-    //   setData(data);
-    // };
-    // fetchData().catch(console.error);
+    const fetchData = async () => {
+      const data = await JSON.parse(localStorage.getItem("recs"));
+      if (!data) return;
+      setData(data);
+    };
+    fetchData().catch(console.error);
 
-    const data1 = JSON.parse(localStorage.getItem("recs"));
-    if (!data1) console.log(data1);
-    setData((prevData) => data1);
+    // const data1 = JSON.parse(localStorage.getItem("recs"));
+    // if (!data1) console.log(data1);
+    // setData((prevData) => data1);
   }, []);
 
   useEffect(() => {
+    console.log(data);
     if (data !== null) localStorage.setItem("recs", JSON.stringify(data));
   }, [data, change]);
 
