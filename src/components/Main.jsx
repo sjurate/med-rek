@@ -3,7 +3,7 @@ import List from "./List";
 import Rec from "./Rec";
 
 const Main = () => {
-  const [data, setData] = useState("");
+  const [data, setData] = useState([]);
   const [change, setChange] = useState(true);
 
   // useEffect(() => {
